@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <script src="https://kit.fontawesome.com/e303127aba.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <div id="app">
+        <div class="log-container">
+            <div class="symbol absolute">Online Class</div>
+            <div class="introduce-text">
+                <p>
+                    Everyone is welcome.
+                </p>
+                <p>
+                    Online class Where helps you save time and  always opens for free
+                </p>
+            </div>
+            <div class="main-log-container">
+                <div class="img-left">
+                    <img src="../image/Healthy-Positive-Classroom.jpg" alt="">
+                </div>
+                <div class="form-log-up">
+                    <form id="register-form" action="">
+                        <div class="input-wrap">
+                            <input placeholder="Email" type="text" name="email">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-wrap">
+                            <input placeholder="Password" type="text" name="password">
+                            <div class="error"></div>
+                        </div>
+                        <div class="row">
+                            <span>You don't have an account? <div id="go-to-login">Logup</div> </span>
+                            <button class="bnt" type="submit">Logup</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script  src="./js/controller.js"></script>
+    <script  src="./js/model.js"></script>
+    <script  src="./js/view.js"></script>
+    <script  src="./js/index.js"></script>
+    <script  src="./js/components.js"></script>
+</body>
+</html>
